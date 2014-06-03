@@ -5,36 +5,47 @@ lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore]
 comments: true
 # Theme customization - please change from the defaults!
+
 theme:
   # Color for top bar, links, etc
-  highlight_color: '#A31515' #3498db
+    highlight_color: '#A31515' #3498db
 
   # Profile links on the left sidebar, leave blank to ignore
-  social:
-    github: swanson
-    bitbucket: philipj
-    hacker_news: swanson
-    stackexchange: 348619
-    stackoverflow: 348619
-    twitter: _swanson
-    facebook: zuck
-    tumblr: animalygifs
-    linkedin: philipjagielski
-    gplus: https://plus.google.com/+AviralGoel/
+    social:
+        github: swanson
+        bitbucket: philipj
+        hacker_news: swanson
+        stackexchange: 348619
+        stackoverflow: 348619
+        twitter: _swanson
+        facebook: zuck
+        tumblr: animalygifs
+        linkedin: philipjagielski
+        gplus: https://plus.google.com/+AviralGoel/
 
   # "Hi, I'm _______"
-  name: Aviral Goel
-  email: goel.aviral@gmail.com
-  tagline: "weak opinions, strongly held"
+    name: Aviral Goel
+    email: goel.aviral@gmail.com
+    tagline: "Some fancy line"
 
   # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-xxxx-x
+    google_analytics_key: UA-xxxx-x
 
   # Toggle "Postings are my own" disclaimer in footer
-  show_disclaimer: false
+    disclaimer: true
 
-  post:
-    show_description:   true
-    show_tags:          true
-    show_related_posts: true
-    comments:           true
+    post:
+
+        fields:
+            description:    true
+            tags:           true
+            related_posts:  true
+
+        comments:           true
+
+        visible:
+            blog:           true
+            book_writeup:   true
+            talk:           true
+            project:        true
+            incomplete:     true

@@ -2,9 +2,9 @@
 layout: post
 title: Sample post
 description: Some random short description
-type: blog
+type: book_writeup
 tags: [1, 2, 3, 4]
-completed: false
+complete: false
 ---
 
 Tattooed roof party *vinyl* freegan single-origin coffee wayfarers tousled, umami yr

@@ -4,7 +4,7 @@ title: Another sample
 description: Some random short description
 type: blog
 tags: [Combinations, Permutation, Sequences, Sets, Algorithms, Data Structures, Science, Combinations, Permutation, Sequences, Sets, Algorithms, Data Structures, Science]
-completed: true
+complete: true
 ---
 
 Tattooed roof party *vinyl* freegan single-origin coffee wayfarers tousled, umami yr
