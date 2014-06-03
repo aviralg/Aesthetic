@@ -225,6 +225,20 @@ i.fa-hn {
 
 .home:hover {
   text-decoration: none;
+  color: {{ site.theme.highlight_color }};
+}
+
+
+.tags {
+  font-size: 24px;
+  float: right;
+  color: #AAA;
+  margin-right: 5px;
+}
+
+.tags:hover {
+  text-decoration: none;
+  color: {{ site.theme.highlight_color }};
 }
 
 .disclaimer p {

@@ -1,0 +1,19 @@
+<script type="text/javascript">
+    (function() {
+        var HI = [ "Bonjour!"
+                 , "Hola!"
+                 , "Gutten Tag!"
+                 , "Ciao!"
+                 , "Olá!"
+                 , "Namaste!"
+                 , "Salaam!"
+                 , "Hi!"
+                 ];
+
+        function randomIntFromInterval(min,max)
+        {
+            return Math.floor(Math.random()*(max-min+1)+min);
+        }
+        document.getElementById("greeting").innerText = HI[randomIntFromInterval(0, HI.length - 1)];
+    })();
+</script>
