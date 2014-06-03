@@ -20,7 +20,7 @@ theme:
     facebook: zuck
     tumblr: animalygifs
     linkedin: philipjagielski
-    gplus: 110552447039675960964
+    gplus: https://plus.google.com/+AviralGoel/
 
   # "Hi, I'm _______"
   name: Aviral Goel
@@ -32,3 +32,9 @@ theme:
 
   # Toggle "Postings are my own" disclaimer in footer
   show_disclaimer: false
+
+  post:
+    show_description:   true
+    show_tags:          true
+    show_related_posts: true
+    comments:           true

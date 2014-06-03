@@ -13,18 +13,26 @@ layout: default
 </p>
 
 <h1 class="title">{{ page.title }}</h1>
-
+{% if site.theme.post.show_description %}
+    <h4 class="description">{{ page.description }}</h4>
+{% endif %}
+{% if site.theme.post.show_tags %}
+    <h6 class="tag-list">{{ page.tags | join: "|" }}</h6>
+{% endif %}
+<hr />
 <div id="post">
   {{ content }}
 </div>
 
-<div id="related">
-  <h3>Related Posts</h3>
-  <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
-    <li>
-      <span>{{ post.date | date_to_string }} &raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+{% if site.theme.post.show_related_posts %}
+    <div id="related">
+      <h3>Related Posts</h3>
+      <ul class="posts">
+        {% for post in site.related_posts limit:3 %}
+        <li>
+          <span>{{ post.date | date_to_string }} &raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+{% endif %}
